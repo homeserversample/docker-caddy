@@ -1,0 +1,5 @@
+vbox-1.tail394bf.ts.net {
+	handle {
+		respond "Helloooooooooo, world!!!!!!!"
+	}
+}
