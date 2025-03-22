@@ -1,5 +1,10 @@
-vbox-1.tail394bf.ts.net {
-	handle {
-		respond "Helloooooooooo, world!!!!!!!"
+vbox.tail394bf.ts.net {
+	handle_path /nextcloud/* {
+		reverse_proxy localhost:10443 {
+			transport http {
+				tls
+				tls_insecure_skip_verify
+			}
+		}
 	}
 }
