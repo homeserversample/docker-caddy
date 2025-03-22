@@ -1,6 +1,6 @@
-vbox.tail394bf.ts.net {
+vbox-2.tail394bf.ts.net {
 	handle_path /nextcloud/* {
-		reverse_proxy localhost:10443 {
+		reverse_proxy nextcloud:443 {
 			transport http {
 				tls
 				tls_insecure_skip_verify
