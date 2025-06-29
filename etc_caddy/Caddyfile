@@ -1,5 +1,11 @@
-vbox-1.tail394bf.ts.net {
+vbox5b.tail394bf.ts.net {
+	log {
+		output file /logs/log
+		format json
+	}
+
 	handle {
-		respond "Helloooooooooo, world!!!!!!!"
+		log_append req_body {http.request.body}
+		respond "cw OK Helloooooooooo, world!!!!!!!"
 	}
 }
